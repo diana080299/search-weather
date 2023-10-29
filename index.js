@@ -39,10 +39,13 @@ const params = new URLSearchParams ({
     lang: "uk",
 })
 // fetch(`${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&days=${days}&lang=uk`)
- return fetch(`${BASE_URL}/forecast.json?${params}`).then ((response) => {
-        if (!response.ok) {
-        throw new Error(`Вимушена помилка статусу ${response.status} | Причина ${response.statusText}`)
-        }
+return fetch(`${BASE_URL}/forecast.json?${params}`).then((response) => {
+ 
+  if (!response.ok) {
+    throw new Error(
+      `Вимушена помилка статусу: ${response.status} | Причина: ${response.statusText}`
+    )}
+
         return response.json()
     })
 }
