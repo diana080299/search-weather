@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="submit" class="js-search-form search-form">
+        <div class="form-group">
+          <label for="city" class="label"> <span class="title">Введіть назву міста:</span></label>
+          <input type="text" name="city" class="search-input-fir" placeholder="Search your city" required />
+        </div>
+        <div class="form-group">
+          <label for="days" class="label">Виберіть кількість днів:</label>
+          <div class="input-group">
+            <select name="days" class="days-select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <button class="search-button" type="submit">Пошук</button>
+          </div>
+        </div>
+      </form>
+      <ul class="js-list weather-cards"></ul>
+      <script src="index.js"></script>
+</body>
+</html>
