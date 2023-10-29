@@ -20,7 +20,7 @@ function handleSearch(event) {
 }
 
 function serviceWeather(city, days) {
-  const BASE_URL = "http://api.weatherapi.com/v1";
+  const BASE_URL = "https://api.weatherapi.com/v1";
   const API_KEY = "66f9e81543404d02beb160521230808";
 
   
